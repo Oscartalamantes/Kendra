@@ -1,0 +1,63 @@
+.Spacer{
+    padding: 5%;
+}
+#success_message{ display: none;}
+
+.outer-margin {
+    margin:3px;
+ }
+
+ .wrapper{
+   max-width:500px;
+   margin:auto; /* position left. right and auto for middle  */
+   margin-top:20px;
+   padding:20px;
+   }
+ input[type='text'],
+ textarea { width:100%;
+ }
+ ::-webkit-input-placeholder {
+     color:#888;
+ }
+ :-moz-placeholder {
+     color:#888;
+ }
+ ::-moz-placeholder {
+     color:#888;
+ }
+ :-ms-input-placeholder {
+     color:#888;
+ }
+ /* Placeholder disappears on focus */
+ input:focus::-webkit-input-placeholder  {color:transparent !IMPORTANT;}
+ input:focus::-moz-placeholder   {color:transparent !IMPORTANT;}
+ input:-moz-placeholder   {color:transparent !IMPORTANT;}
+ textarea:focus::-webkit-input-placeholder  {color:transparent !IMPORTANT;}
+ textarea:focus::-moz-placeholder   {color:transparent !IMPORTANT;}
+ textarea:-moz-placeholder   {color:transparent !IMPORTANT;}
+ .style1 {color: #FF0000}
+ textarea {
+  height:70px !IMPORTANT;
+  }
+  .input-row {
+   display:block;
+   min-height:85px;
+   margin-bottom:-5px;
+ }
+ legend{
+    text-align: center;
+ }
+ .outer-margin2{
+    background-color: black;
+    color: white;
+    z-index: 0;
+    border: w;
+ }
+ .inner-margin1{
+    background-color: white;
+    display: block;
+    z-index: 1;
+ }
+ .Quoteh1{
+    color:#FF0000
+ }
