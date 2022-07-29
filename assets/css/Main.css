@@ -50,13 +50,19 @@
  .outer-margin2{
     background-color: black;
     color: white;
-    z-index: 0;
-    border: w;
+    z-index: 1;
+    -webkit-text-stroke-width: medium;
+    width: auto;
+   margin: auto;
+   border-style:ridge;
+   border-radius: inherit;
+   font-style: initial;
+   border-width: 2rem;
  }
  .inner-margin1{
     background-color: white;
     display: block;
-    z-index: 1;
+    z-index: 0;
  }
  .Quoteh1{
     color:#FF0000
