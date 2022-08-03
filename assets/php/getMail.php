@@ -1,43 +1,58 @@
-<?php
 
+
+
+
+
+<?php 
 // Replace this with your own email address
-$to = 'resumesbykendra@gmail.com';
+$to = 'sonnystrikes@gmail.com';
+// resumesbykendra@gmail.com
 
 function url(){
   return sprintf(
     "%s://%s",
-    isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-    $_SERVER['SERVER_NAME']
+    isset($_SERVER['mysql.resumesbykendra.com']) && $_SERVER['mysql.resumesbykendra.com'] != 'off' ? 'https' : 'http',
+    $_SERVER['resumeclients']
   );
 }
 
+
+
 if($_POST) {
 
-   $name = trim(stripslashes($_POST['name']));
+   $fullname = trim(stripslashes($_POST['fullname']));
    $email = trim(stripslashes($_POST['email']));
-   $subject = trim(stripslashes($_POST['subject']));
    $contact_message = trim(stripslashes($_POST['message']));
+   $Additional = trim(stripslashes($_POST['Additional']));
+   $goal = trim(stripslashes($_POST['goal']));
+   $Work = trim(stripslashes($_POST['Work']));
+   $Services = trim(stripslashes($_POST['Services']));
+   $Education = trim(stripslashes($_POST['Education']));
 
    $phone = trim(stripslashes($_POST['phone']));
-   $company = trim(stripslashes($_POST['company']));
+   $Education = trim(stripslashes($_POST['Education']));
 
    if ($phone == '') { $phone = "N/A"; }
-   if ($company == '') { $company = "N/A"; }
+   if ($Education == '') { $Education = "N/A"; }
 
    
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
-	 $message .= "Email address: " . $email . "<br />";
+   $message .= "Email from: " . $fullname . "<br />";
+	$message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
-   $message .= "Company: " . $company . "<br />";
+   $message .= "Additional: " . $Additional . "<br />";
+   $message .= "goal: " . $goal . "<br />";
+   $message .= "Work: " . $Work . "<br />";
+   $message .= "Services: " . $Services . "<br />";
+   $message .= "Education: " . $Education . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
-   $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " contact form. <br />";
+   $message .= "<br /> ----- <br /> This email was sent from your site " . url(https://www.resumesbykendra.com/) . " contact form. <br />";
 
    // Set From: header
-   $from =  $name . " <" . $email . ">";
+   $from =  $fullname . " <" . $email . ">";
 
    // Email Headers
 	$headers = "From: " . $from . "\r\n";
