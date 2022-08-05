@@ -61,3 +61,8 @@
  .Quoteh1{
     color:#FF0000
  }
+
+ .logo{
+    border-radius: 1rem;
+    border-style: ridge;
+ }
