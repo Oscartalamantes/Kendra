@@ -12,6 +12,11 @@
    margin:auto; /* position left. right and auto for middle  */
    margin-top:20px;
    padding:20px;
+   display: block;
+   border-style: outset;
+   border-color: black;
+   border-width: thick;
+}
    }
  input[type='text'],
  textarea { width:100%;
@@ -48,10 +53,10 @@
     text-align: center;
  }
  .outer-margin2{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     z-index: 0;
-    border: w;
+    -webkit-text-stroke-width: medium;
  }
  .inner-margin1{
     background-color: white;
@@ -59,10 +64,18 @@
     z-index: 1;
  }
  .Quoteh1{
-    color:#FF0000
+    color:#000
+ }
+ .font-line {
+    color:#fff;
+    margin-right: 30px;
+ }
+ .bg-kendra{
+     background-size: auto;
+     max-width: -webkit-fill-available;
  }
 
- .logo{
+  .logo{
     border-radius: 1rem;
     border-style: ridge;
  }
