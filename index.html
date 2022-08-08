@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -170,6 +169,8 @@
 <div class="outer-margin">
   <div class="wrapper">
     <form name="jQueryBootstrapForm" id="jQueryBootstrapForm" action="assets/php/getMail.php" method="post" enctype='multipart/form-data' autocomplete="on">
+
+
       <!-- Text input-->
       <div class="input-row">
         <label class="control-label" for="fullname" >Full Name</label>
@@ -180,6 +181,8 @@
           <label style="color:red; font-weight:normal;" class="error" for="fullname" generated="true"></label>
         </div>
       </div>
+
+
       <!-- Text input-->
       <div class="input-row">
         <label class="control-label" for="email">E-Mail</label>
@@ -190,6 +193,8 @@
           <label style="color:red; font-weight:normal;" class="error" for="email" generated="true"></label>
         </div>
       </div>
+
+
       <!-- Text input-->
       <div class="input-row">
         <label class="control-label" for="phone">Phone </label>
@@ -200,6 +205,8 @@
           <label style="color:red; font-weight:normal;" class="error" for="phone" generated="true"></label>
         </div>
       </div>
+
+
             <!-- Text input-->
             <div class="input-row">
               <label class="control-label" for="Education">Education</label>
@@ -210,9 +217,11 @@
                 <label style="color:red; font-weight:normal;" class="error" for="Education" generated="true"></label>
               </div>
 
+
+
                           <!-- Text input-->
             <div class="input-row">
-              <label class="control-label" for="SelectService">Service Type</label>
+              <label class="control-label" for="Service">Service Type</label>
               <div class="inputGroupContainer">
                 <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                   <input name="Service" id="Service" placeholder="Input Service * " class="form-control" type="text">
@@ -221,16 +230,21 @@
                 <label style="color:red; font-weight:normal;" class="error" for="Service" generated="true"></label>
               </div>
 
+
+
       <!-- Text area -->
       <div style="display:block; min-height:120px; margin-top:-5px;">
         <label class="control-label" for="goal">Describe Your Work</label>
         <div class="inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-            <textarea class="form-control" name="comment" id="goal" placeholder="Message *" onKeyUp="limitTextCount('comment', 'divcount', 1000);" onKeyDown="limitTextCount('comment', 'divcount', 1000);"></textarea>
+            <textarea class="form-control" name="goal" id="goal" placeholder="Message *" onKeyUp="limitTextCount('comment', 'divcount', 1000);" onKeyDown="limitTextCount('comment', 'divcount', 1000);"></textarea>
           </div>
           <span id="divcount" style="font-size:0.8em; color:#999999; margin-top:4px; float:right;">1000 Countdown</span>
-          <label style="color:red; font-weight:normal;" class="error" for="Work" generated="true"></label>
+          <label style="color:red; font-weight:normal;" class="error" for="goal" generated="true"></label>
         </div>
+
+
+
               <!-- Text area -->
       <div style="display:block; min-height:120px; margin-top:-5px;">
         <label class="control-label" for="Work">What is your desired occupation, industry, or career goal?</label>
@@ -241,6 +255,8 @@
           <span id="divcount" style="font-size:0.8em; color:#999999; margin-top:4px; float:right;">1000 Countdown</span>
           <label style="color:red; font-weight:normal;" class="error" for="Work" generated="true"></label>
         </div>
+
+
 
               <!-- Text area -->
       <div style="display:block; min-height:120px; margin-top:-5px;">
@@ -254,6 +270,10 @@
         </div>
       </div>
       </div>
+
+
+
+
       <pre style="color:red">*Dates Required for new resume creation.</pre> <br>
       <label for="">Upload Your Resume</label></br>
       <input type="file" name="fileToUpload1[]" id="fileToUpload" multiple="true">
