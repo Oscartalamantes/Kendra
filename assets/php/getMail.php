@@ -1,8 +1,3 @@
-
-
-
-
-
 <?php 
 // Replace this with your own email address
 $to = 'sonnystrikes@gmail.com';
@@ -22,12 +17,12 @@ if($_POST) {
 
    $fullname = trim(stripslashes($_POST['fullname']));
    $email = trim(stripslashes($_POST['email']));
-   $contact_message = trim(stripslashes($_POST['message']));
+   // $contact_message = trim(stripslashes($_POST['message']));
    $Additional = trim(stripslashes($_POST['Additional']));
    $goal = trim(stripslashes($_POST['goal']));
    $Work = trim(stripslashes($_POST['Work']));
-   $Services = trim(stripslashes($_POST['Services']));
-   $Education = trim(stripslashes($_POST['Education']));
+   $Service = trim(stripslashes($_POST['Service']));
+
 
    $phone = trim(stripslashes($_POST['phone']));
    $Education = trim(stripslashes($_POST['Education']));
@@ -45,7 +40,7 @@ if($_POST) {
    $message .= "Additional: " . $Additional . "<br />";
    $message .= "goal: " . $goal . "<br />";
    $message .= "Work: " . $Work . "<br />";
-   $message .= "Services: " . $Services . "<br />";
+   $message .= "Service: " . $Service . "<br />";
    $message .= "Education: " . $Education . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
