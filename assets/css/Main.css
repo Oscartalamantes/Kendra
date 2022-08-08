@@ -8,11 +8,16 @@
  }
 
  .wrapper{
-   max-width:500px;
+   max-width:none;
    margin:auto; /* position left. right and auto for middle  */
    margin-top:20px;
-   padding:20px;
-   }
+   padding:30px;
+   display: block;
+   border-style: outset;
+   border-color: black;
+   border-width: thick;
+}
+
  input[type='text'],
  textarea { width:100%;
  }
