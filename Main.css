@@ -71,8 +71,11 @@
     margin-right: 30px;
  }
  .bg-kendra{
-     background-size: auto;
-     max-width: -webkit-fill-available;
+    border-width: thick;
+    background-size: auto;
+    max-width: -webkit-fill-available;
+    border-style: ridge;
+    border-radius: 1rem;
  }
 
   .logo{
