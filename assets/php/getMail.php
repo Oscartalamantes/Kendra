@@ -18,7 +18,7 @@ if($_POST)
 
    $fullname = trim(stripslashes($_POST['fullname']));
    $email = trim(stripslashes($_POST['email']));
-   // $contact_message = trim(stripslashes($_POST['message']));
+   $contact_message = trim(stripslashes($_POST['message']));
    $Additional = trim(stripslashes($_POST['Additional']));
    $goal = trim(stripslashes($_POST['goal']));
    $Work = trim(stripslashes($_POST['Work']));
@@ -34,7 +34,7 @@ if($_POST)
 
    // Set Message
    $message .= "Email from: " . $fullname . "<br />";
-	$message .= "Email address: " . $email . "<br />";
+   $message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
    $message .= "Additional: " . $Additional . "<br />";
    $message .= "goal: " . $goal . "<br />";
