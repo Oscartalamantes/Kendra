@@ -14,7 +14,7 @@ function url(){
 
 
 
-if($_POST) {
+if($_POST) 
 
    $fullname = trim(stripslashes($_POST['fullname']));
    $email = trim(stripslashes($_POST['email']));
