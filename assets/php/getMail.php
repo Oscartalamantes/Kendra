@@ -43,7 +43,7 @@ if($_POST)
    $message .= "Education: " . $Education . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
-   $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['SERVER_NAME'];  <br />";
+   $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['HTTP_HOST'] . "<br />";
    
 
    // Set From: header
