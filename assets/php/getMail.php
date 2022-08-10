@@ -1,3 +1,4 @@
+
 <?php 
 // Replace this with your own email address
 $to = 'sonnystrikes@gmail.com';
@@ -22,8 +23,6 @@ if($_POST) {
    $goal = trim(stripslashes($_POST['goal']));
    $Work = trim(stripslashes($_POST['Work']));
    $Service = trim(stripslashes($_POST['Service']));
-
-
    $phone = trim(stripslashes($_POST['phone']));
    $Education = trim(stripslashes($_POST['Education']));
 
@@ -44,7 +43,8 @@ if($_POST) {
    $message .= "Education: " . $Education . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
-   $message .= "<br /> ----- <br /> This email was sent from your site " . url(https://www.resumesbykendra.com/) . " contact form. <br />";
+   $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['SERVER_NAME'];  <br />";
+   
 
    // Set From: header
    $from =  $fullname . " <" . $email . ">";
