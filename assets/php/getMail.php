@@ -14,7 +14,7 @@ function url(){
 
 
 
-if($_POST) 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    $fullname = trim(stripslashes($_POST['fullname']));
    $email = trim(stripslashes($_POST['email']));
@@ -34,7 +34,7 @@ if($_POST)
 
    // Set Message
    $message .= "Email from: " . $fullname . "<br />";
-   $message .= "Email address: " . $email . "<br />";
+	$message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
    $message .= "Additional: " . $Additional . "<br />";
    $message .= "goal: " . $goal . "<br />";
@@ -43,22 +43,24 @@ if($_POST)
    $message .= "Education: " . $Education . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
-   $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['HTTP_HOST'] . "<br />";
+   $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['SERVER_NAME'] . "<br />" ;
    
 
    // Set From: header
    $from =  $fullname . " <" . $email . ">";
 
    // Email Headers
-	$headers = "From: " . $from . "\r\n";
+   // $headers = array();
+	$headers .= "From: " . $from . "\r\n";
 	$headers .= "Reply-To: ". $email . "\r\n";
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
    ini_set("sendmail_from", $to); // for windows server
-   $mail = mail($to, $subject, $message, $headers);
+   $mail = mail($to, $subject, $message, $headers);   
 
-	if ($mail) { echo "Thank you for your Intrest, I will contact you as soon as I can!"; }
+
+	if ($mail) { echo "Thank you for your Intrest, I will contact you as soon as I can!"; }  
    else { echo "Something went wrong. Please try again."; }
 
 }
