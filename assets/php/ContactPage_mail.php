@@ -1,6 +1,6 @@
 <?php 
 // Replace this with your own email address
-$to = '';
+$to = 'resumesbykendra@gmail.com';
 // resumesbykendra@gmail.com
 
 function url(){
