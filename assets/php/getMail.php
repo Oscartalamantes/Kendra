@@ -1,3 +1,5 @@
+include "./assets/php/Upload_Files.php"
+
 <?php 
 // Replace this with your own email address
 $to = 'sonnystrikes@gmail.com';
@@ -24,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $Service = trim(stripslashes($_POST['Service']));
    $phone = trim(stripslashes($_POST['phone']));
    $Education = trim(stripslashes($_POST['Education']));
-   $fileToUpload = trim(stripslashes($_POST['fileToUpload']));
 
    if ($phone == '') { $phone = "N/A"; }
    if ($Education == '') { $Education = "N/A"; }
@@ -33,18 +34,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
-   $message .= "Name: " . $fullname . "<br />";
-   $message .= "Email address: " . $email . "<br />";
+   $message .= "Email from: " . $fullname . "<br />";
+	$message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
-   $message .= "Education: " . $Education . "<br />";
-   $message .= "Service Type: " . $Service . "<br />";
-   $message .= "Describe Your Work: " . $Work . "<br />";
-   $message .= "Carrer Goal: " . $goal . "<br />";
    $message .= "Additional: " . $Additional . "<br />";
-  
-   
-   
-   $message .= "fileToUpload: " . $fileToUpload . "<br />";
+   $message .= "goal: " . $goal . "<br />";
+   $message .= "Work: " . $Work . "<br />";
+   $message .= "Service: " . $Service . "<br />";
+   $message .= "Education: " . $Education . "<br />";
+   $message .= "Message: <br />";
    $message .= nl2br($contact_message);
    $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['SERVER_NAME'] . "<br />" ;
    
@@ -67,6 +65,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    else { echo "Something went wrong. Please try again."; }
 
 }
-
 
 ?>
