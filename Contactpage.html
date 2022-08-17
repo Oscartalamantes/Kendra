@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Contact Page</title>
+    <title>Resumes by Kendra</title>
 
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/Main.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/Main.css" />
     <!-- Google Fonts Roboto -->
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
 
     
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     
     
     
@@ -46,7 +46,8 @@
       
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-         <a class="navbar-brand" href="index.html"><img src="assets/img/ResumesByKendraLogo.PNG" class="logo height" width="70px" alt="LogoKendra" > </a>
+            <a class="navbar-brand" href="index.html"><img src="assets/img/ResumesByKendraLogo.PNG" class="logo height" width="70px" alt="LogoKendra" > </a>
+            
           <button
             class="navbar-toggler"
             type="button"
@@ -59,10 +60,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="aboutme.html">About Me</a>
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              <a class="nav-link " href="aboutme.html">About Me</a>
               <a class="nav-link" href="index.html#Services">Services</a>
-              <a class="nav-link active" href="Contactpage.html">Contact Us</a>
+              <a class="nav-link active" href="Contactpage.html">Contact Me</a>
             </div>
           </div>
         </div>
@@ -73,14 +74,14 @@
       <body>
         <div class= "main"></div>
        
-         <!-- <body style="background-image: url(https://static.pexels.com/photos/7105/coffee-iphone-laptop-notebook.jpg)"> -->
+         
           <body style="background-image: url(https://fadzrinmadu.github.io/hosted-assets/amazing-contact-page-using-html-css/bg.png)"> 
 
           <section class="contact-page-section">
                 <div class="container">
                     <div class="sec-title">
-                        <div class="title" >Contact Me</div>
-                          <h2>Let's Get in Touch.</h2>
+                        <div class="title"> Contact Me</div>
+                          <h2>Let's Get in Touch!</h2>
                       </div>
                       <div class="inner-container">
                         <div class="row clearfix">
@@ -90,23 +91,24 @@
                                 <div class="inner-column">
                                     
                                       <!--Contact Form-->
-                                      <div class="contact-form">
-                                          <form method="post" action="sendemail.php" id="contact-form">
+                                      <div class="contact-form">         
+                                          <form method="post" action="assets/php/ContactPage_mail.php" id="contact-form">
                                               <div class="row clearfix">
-                                                  <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                                      <input type="text" name="name" value="" placeholder="Name" required>
+                                                  <div class="form-group col-md-6 col-sm-6 co-xs-12" >
+                                                      <input type="text" name="Name"  placeholder="Name" for="Name" required >
+
                                                   </div>
                                                   <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                                      <input type="email" name="email" value="" placeholder="Email" required>
+                                                      <input type="email" name="Email"  placeholder="Email" for="Email" required>
                                                   </div>
                                                   <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                                      <input type="text" name="subject" value="" placeholder="Subject" required>
+                                                      <input type="text" name="Subject"  placeholder="Subject" for="Subject" required>
                                                   </div>
                                                   <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                                      <input type="text" name="phone" value="" placeholder="Phone" required>
+                                                      <input type="text" name="Phone"  placeholder="Phone" for="Phone" required>
                                                   </div>
                                                   <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                                                      <textarea name="message" placeholder="Massage"></textarea>
+                                                      <textarea name="Message" placeholder="Message" for="Message" required ></textarea>
                                                   </div>
                                                   <div class="form-group col-md-12 col-sm-12 co-xs-12">
                                                       <button type="submit" class="theme-btn btn-style-one">Send Now</button>
@@ -124,11 +126,11 @@
                                 <div class="inner-column">
                                     <h2>Contact Info</h2>
                                       <ul class="list-info">
-                                        <li><i class="fas fa-globe"></i>Kendra Moore.</li>
+                                        <li><i class="fas fa-globe"></i>Kendra Moore</li>
                                           <li><i class="fas fa-envelope"></i>resumesbykendra@gmail.com</li>
-                                          <li><i class="fas fa-phone"></i>(785) 840-7523 <br> </li>
-                                     </ul>
-                                       <!-- <ul class="social-icon-four">
+                                          <!-- <li><i class="fas fa-phone"></i>(785) 840-7523 <br> </li> -->
+                                       </ul>
+                                      <!--<ul class="social-icon-four">
                                           <li class="follow">Follow on: </li>
                                           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -159,7 +161,6 @@
         <div class="container p-4 pb-0">
           <!-- Section: Social media -->
           <section class="mb-4">
-<!--               <p> Check me out on these Social Networks:</p> -->
             <!-- Google -->
             <a class="btn btn-outline-light btn-floating m-1" a href="mailto:resumesbykendra@gmail.com" role="button"
               ><i class="fab fa-google"></i
@@ -181,7 +182,8 @@
     </footer>
 
     <div class="Spacer"></div>
-
+    <div class="Spacer"></div>
+    <div class="Spacer"></div>
 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
