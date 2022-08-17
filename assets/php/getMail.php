@@ -36,13 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
-     $message .= "Email from: " . $fullname . "<br />";
+     $message .= "Sender: " . $fullname . "<br />";
      $message .= "Email address: " . $email . "<br />";
      $message .= "Phone: " . $phone . "<br />";
      $message .= "Education: " . $Education . "<br />";
-     $message .= "Service: " . $Service . "<br />";
-     $message .= "Work: " . $Work . "<br />";
-     $message .= "Additional: " . $Additional . "<br />";
+     $message .= "Service Type: " . $Service . "<br />";
+     $message .= "Describe Your Work: " . $Work . "<br />";
+     $message .= "Additional information/Questions: " . $Additional . "<br />";
      $message .= "fileToUpload: " . $fileToUpload . "<br />";
      
      
