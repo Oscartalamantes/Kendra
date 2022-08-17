@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/Main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <!-- Google Fonts Roboto -->
     <link
       rel="stylesheet"
@@ -30,6 +31,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -71,7 +73,10 @@
       
         <!-- Background image -->
         <div
-          class="p-5 text-center bg-image">
+          class="p-5 text-center bg-image" 
+          style="
+            margin: auto;">
+
           <img src="assets/img/Resumes_by_Kendra.jpg" alt="Kendrabackground" class="bg-kendra">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-black">
@@ -94,68 +99,31 @@
 <section id="Services" class="text-center"style="
 margin: auto;
 padding-left: 2%;
-padding-right: 2%;
-">
+padding-right: 2%;">
+
   <strong style="
     font-size: xxx-large;
     font-family: sans-serif;
     text-decoration-line: underline;">Services</strong>
 
-  <!-- <div class="row">
-    <div class="col-lg-4 col-md-12 mb-4">
-      <div class="card">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height:252px ;">
-          <img src="assets/img/andrew-neel-cckf4TsHAuw-unsplash.jpg" class="img-fluid" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Revamp Resume</h5>
-          <p class="card-text">
-            
-          </p>
-          <a href="#!" class="btn btn-primary">Read</a> 
-        </div>
-      </div>
-    </div> -->
+   <div class="row">
 
-    <div class="col-lg-4 col-md-4 mb-4">
-      <div class="card">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" >
-          <img src="assets/img/romain-dancre-doplSDELX7E-unsplash.jpg" class="img-fluid" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
-        </div>
+        <div class="col-lg-6">
+      <div class="card" style="width: 40rem;">
+        <img src="assets/img/romain-dancre-doplSDELX7E-unsplash.jpg" class="card-img-top box" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Update Resume</h5>
-          <p class="card-text">
-            I will edit your resume to showcase your experience with a new, eye-catching design and keywords to land your dream job. 
-          </p>
-          <!-- <a href="#!" class="btn btn-primary">Read</a> -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
-
-    <div class="col-lg-4 col-md-4 mb-4">
-      <div class="card">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="assets/img/green-chameleon-s9CC2SKySJM-unsplash.jpg" class="img-fluid" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
-        </div>
+    <div class="col-lg-6">
+      <div class="card" style="width: 40rem;">
+        <img src="assets/img/green-chameleon-s9CC2SKySJM-unsplash.jpg" class="card-img-top box" alt="...">
         <div class="card-body">
-          <h5 class="card-title">New Resume</h5>
-          <p class="card-text">
-            No resume? No problem! I can create you a new resume from scratch. 
-          </p>
-          <!-- <a href="#!" class="btn btn-primary">Read</a> -->
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
       <!-- space and padding for images -->
@@ -164,9 +132,15 @@ padding-right: 2%;
 
   <!-- Services -->
 
-    <main>
+<main 
+    style="
+    margin: auto;
+    width: -webkit-fill-available;">
 <div class="container2"></div>
-<legend id="Quote" style="color: black;font-size: 3.5rem;font-family: fantasy;">Get A Quote!</legend>
+<strong id="Quote" style="
+    font-size: xxx-large;
+    font-family: sans-serif;
+    text-decoration-line: underline;">Get a Quote!</strong>
 
 <div class="outer-margin2">
 
@@ -338,22 +312,29 @@ padding-right: 2%;
       <pre style="color:red">*Dates Required for new resume creation.</pre> <br>
       <label for="">Upload Your Resume</label></br>
       <input type="file" name="fileToUpload1[]" id="fileToUpload" multiple="true" style="
-      padding-left: 5%;
-  ">
+      padding-left: 5%;">
+      
       <hr>
 
-      <!--Button -->
-      <div class="input-row" style="margin-bottom:-20px;">
-        <div>
-          <!-- For sliver button change btn-primary to btn-default - you can add button width:100%; for full width button -->
-          <input type="submit" value="Submit" class="btn btn-lg"  style="position:relative;color: black;display: block;margin:auto;" target="_blank" />
-        </div>
-      </div>
+     <div class="g-recaptcha" data-sitekey="6Lf3t4AhAAAAAIAr3NcgBqWeCjTkAJyFlcl4I_Nj" data-callback="enableBtn" style="
+    text-align: -webkit-center;"></div>
+
+
+<button type="submit"  id="submit_details" disabled >Send</button>
+
     </form>
+    <script>
+    function enableBtn(){
+        document.getElementById("submit_details").disabled = false;
+    }
+</script>
+
   </div>
 </div>
 </div>
 </div>
+
+
     </main>
   </container>
     <!-- FOOTER -->
