@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $Email = trim(stripslashes($_POST['Email']));
    $Subject = trim(stripslashes($_POST['Subject']));
    $Phone = trim(stripslashes($_POST['Phone']));
-   $Massage = trim(stripslashes($_POST['Message']));
+   $Message = trim(stripslashes($_POST['Message']));
    
 
 
