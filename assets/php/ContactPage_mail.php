@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $mail = mail($to, $subject, $message, $headers);   
 
 
-	if ($mail) { echo ""; }  
+	if ($mail) { echo "Thank you, I will contact you as soon as I can!"; }  
    else { echo "Something went wrong. Please try again."; }
 
 }
