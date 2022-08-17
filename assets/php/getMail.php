@@ -1,4 +1,5 @@
-include "./assets/php/Upload_Files.php"
+<?php include 'assets/php/Upload_Files.php'
+?>
 
 <?php 
 // Replace this with your own email address
@@ -35,14 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    // Set Message
    $message .= "Email from: " . $fullname . "<br />";
-	$message .= "Email address: " . $email . "<br />";
+   $message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
    $message .= "Additional: " . $Additional . "<br />";
    $message .= "goal: " . $goal . "<br />";
    $message .= "Work: " . $Work . "<br />";
    $message .= "Service: " . $Service . "<br />";
    $message .= "Education: " . $Education . "<br />";
-   $message .= "Message: <br />";
    $message .= nl2br($contact_message);
    $message .= "<br /> ----- <br /> This email was sent from your site " . $_SERVER['SERVER_NAME'] . "<br />" ;
    
