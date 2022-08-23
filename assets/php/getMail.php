@@ -1,6 +1,4 @@
-
-<?php include 'assets/php/Upload_Files.php'
-?>
+include /assets/php/Upload_Files.php
 
 <?php 
 // Replace this with your own email address
